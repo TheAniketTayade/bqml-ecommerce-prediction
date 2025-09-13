@@ -31,11 +31,16 @@ The first step was to explore the public Google Analytics sample dataset. I sele
 
 Using BQML's `CREATE MODEL` statement, I trained a **logistic regression** model. This type of model is ideal for binary classification tasks like predicting a purchase (yes/no). The model was trained directly on the `training_data` view created in the previous step.
 
+<img width="1600" height="422" alt="image" src="https://github.com/user-attachments/assets/93f935ab-5121-42ce-9875-c5e0878f4d27" />
+
+
 *(See query: `sql/02_model_training.sql`)*
 
 ### Step 3: Model Evaluation
 
 After training, I evaluated the model's performance using the `ML.EVALUATE` function. This function provides key classification metrics such as **precision**, **recall**, and **accuracy**, which help determine how well the model predicts outcomes on the training data.
+
+<img width="1600" height="916" alt="image" src="https://github.com/user-attachments/assets/cd2fbaf9-a30f-479a-b3be-72735ecc72ae" />
 
 *(See query: `sql/03_model_evaluation.sql`)*
 
